@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11岁儿童迷宫游戏 - A4纸大小</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>迷宫挑战</h1>
+            <p>从起点出发，找到通往终点的路径！</p>
+        </div>
+        
+        <div class="maze-container">
+            <div class="maze" id="maze"></div>
+            <div class="maze-info">
+                <div class="legend">
+                    <div class="start-point">起点</div>
+                    <div class="end-point">终点</div>
+                </div>
+                <button id="generate-btn">生成新迷宫</button>
+                <button id="print-btn">打印迷宫</button>
+                <button id="solution-btn">显示答案</button>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>祝你玩得开心！</p>
+        </div>
+    </div>
+    
+    <!-- 引入jsPDF库 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="src/js/maze.js"></script>
+</body>
+</html> 
